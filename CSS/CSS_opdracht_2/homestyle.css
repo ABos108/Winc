@@ -1,0 +1,103 @@
+body{
+    background-image: url("lavender.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: palevioletred;
+}
+main, header, footer{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: whitesmoke;
+}
+header, nav, li, footer{
+    text-align: center;
+}
+ul{
+    padding-left: 0;
+}
+nav{
+    background-image: linear-gradient(darkgrey, grey);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+nav > a{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+main{
+    height: 800px;
+}
+img{
+    margin-right: 16px;
+    max-width: 100%;
+    float: left;
+}
+section, hr{
+    width:576px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+footer{
+    font-size: 8pt;
+}
+.topdog{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid indigo;
+}
+hr{
+    color:indigo;
+}
+textarea{
+    resize: none;
+}
+a:link{
+    color: darkblue;
+}
+a:visited{
+    color: darkmagenta;
+}
+a:hover{
+    color: darkred;
+}
+.courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+.bottom-space{
+    min-height: 32px;
+    margin-bottom: 0;
+}
+.blogpost{
+    width: 576px;
+    border: 2px dotted indigo;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.flex{
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: end;
+    align-items: center;
+}
+#tall{
+   flex-grow: 5; 
+}
+#weird{
+    align-self: flex-end;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 680px) {
+    .topdog{
+        width: 90%;
+    }
+    section, hr{
+        width:90%;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+}

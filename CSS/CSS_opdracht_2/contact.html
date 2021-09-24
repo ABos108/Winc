@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interactive Form</title>
+    <link rel="stylesheet" type="text/css" href="homestyle.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="topdog">
+        <header>
+            <h1 class="courier">My Website - Now in Multicolor&copy;</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="music.html">Music</a>
+                <a href="manga.html">Comics</a>
+                <a href="games.html">Video Games</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <section class="bottom-space">
+                <h3 class="courier" style="text-align: center;">
+                    Join the Chef-only members club:
+                </h3>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                        <label>Name:<br> <input type="text" name="name"></label>
+                    </p>
+                    <p>
+                        <label>Mail-address:<br> <input type="email" name="mail"></label>
+                    </p>
+                    <p>
+                        <label>Phone number:<br> <input type="tel" name="phone"></label>
+                    </p>
+                    <p>
+                        <label>Age:<br> <input type="number" name="age" min="1"></label>
+                    </p>
+                    <p>
+                        <label>Date of birth:<br> <input type="date" name="birth"></label>
+                    </p>
+                    <p>
+                        Gender:<br>
+                        <label><input type="radio" name="gender" value="Male"> Male</label><br>
+                        <label><input type="radio" name="gender" value="Female"> Female</label><br>
+                        <label><input type="radio" name="gender" value="Agender"> Agender</label><br>
+                        <label><input type="radio" name="gender" value="Other"> Other</label><br>
+                    </p>
+                    <p>
+                        Favoriete cuisines (Check all applicable):<br>
+                        <label><input type="checkbox" name="cuisines[]" value="French">French</label>
+                        <label><input type="checkbox" name="cuisines[]" value="Italian">Italian</label>
+                        <label><input type="checkbox" name="cuisines[]" value="Spanish">Spanish</label>
+                        <label><input type="checkbox" name="cuisines[]" value="Arabian"> Arabian</label>
+                    </p>
+                    <p>
+                        <label>Write a small biography:<br> <textarea rows="5" cols="40" name="bio"></textarea></label>
+                    </p>
+                    <p>
+                        <label>Add a recipe (optional):<br> <input type="url" name="recipe"></label>
+                    </p>
+                    <button type="submit">I want to join</button> <button type="reset">Reset</button><br>
+                </form>
+            </section>
+        </main>
+        <footer class="bottom-space">
+            <hr>
+            This is the end of the page.
+        </footer>
+    </div>
+</body>
+
+</html>

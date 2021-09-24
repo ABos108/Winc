@@ -1,0 +1,71 @@
+body{
+    background-image: url("lavender.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main, header, footer{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: whitesmoke;
+}
+header, nav, li, footer{
+    text-align: center;
+}
+ul{
+    padding-left: 0;
+}
+nav{
+    background-image: linear-gradient(darkgrey, grey);
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+nav > a{
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+main{
+    height: 100%;
+}
+img{
+    margin-right: 16px;
+    max-width: 30%;
+    float: left;
+}
+section, hr{
+    width:576px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+section{
+    display: inline-block;
+}
+footer{
+    font-size: 8pt;
+}
+div.topdog{
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid indigo;
+}
+hr{
+    color:indigo;
+}
+a:link{
+    color: darkblue;
+}
+a:visited{
+    color: darkmagenta;
+}
+a:hover{
+    color: darkred;
+}
+.courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+.bottom-space{
+    min-height: 32px;
+    margin-bottom: 0;
+}
