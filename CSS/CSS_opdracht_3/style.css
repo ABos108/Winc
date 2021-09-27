@@ -8,13 +8,13 @@ html, body {
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows:100px auto 80px 40px;
     grid-template-areas: 
-        "h h h h h h h h h h h h"
-        "m m m m m m m m m m m m"
-        "w w w w w w w w w w w w"
-        "f f f f f f f f f f f f";
+        "h h h"
+        "m m m"
+        "w w w"
+        "f f f";
 }
 .container > * {
     display: flex;
@@ -44,22 +44,22 @@ footer {
     .container {
         height: 100%;
         display: grid;
-        grid-template-columns: 150px repeat(11, 1fr);
+        grid-template-columns: 150px repeat(2, 1fr);
         grid-template-rows: auto 80px 40px;
         grid-template-areas: 
-            "h m m m m m m m m m m m"
-            "h w w w w w w w w w w w"
-            "h f f f f f f f f f f f";
+            "h m m"
+            "h w w"
+            "h f f";
     }
 }
 @media (min-width:800px) {
     .container {
         height: 100%;
         display: grid;
-        grid-template-columns: 150px repeat(10, 1fr) 150px;
+        grid-template-columns: 150px 1fr 150px;
         grid-template-rows: auto 40px;
         grid-template-areas: 
-            "h m m m m m m m m m m w"
-            "h f f f f f f f f f f w";
+            "h m w"
+            "h f w";
     }
 }
