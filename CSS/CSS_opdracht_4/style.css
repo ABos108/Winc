@@ -3,6 +3,7 @@ html, body {
     height: 100%;
     padding: 0px;
     margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .grid_container{
     height: 200%;
@@ -30,7 +31,6 @@ header>*{
     background-color: slategray;
     display: flex;
     height: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: seashell;
 }
 .header_left{
