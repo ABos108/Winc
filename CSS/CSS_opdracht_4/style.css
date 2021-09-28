@@ -8,13 +8,19 @@ html, body {
     height: 200%;
     display: grid;
     grid-template-rows: 100px 60px auto 180px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr auto 1fr
 }
 .grid_container > * {
     display: flex;
 }
 .big{
     font-size: 20pt;
+}
+.big_only{
+    display: none;
+}
+.adspace{
+    display: none;
 }
 header {
     grid-row: 1/2;
@@ -30,6 +36,7 @@ header>*{
 .header_left{
     align-items: center;
     width: fit-content;
+    padding-right: 40px;
 }
 .header_right{
     padding-right: 20px;
@@ -41,16 +48,18 @@ header>*{
 nav {
     grid-row: 2/3;
     grid-column: 1/-1;
-    display: flex;
     background-color: seagreen;
     position: sticky;
     top: 0;
+    justify-content: space-around;
+    align-items: center;
 }
 main {
     grid-row: 3/4;
     grid-column: 1/-1;
     display: flex;
     flex-flow: column wrap;
+    min-width: 50%;
     background-color: darkseagreen;
 }
 article{
@@ -78,6 +87,26 @@ footer {
         flex-direction: row;
     }
     article.left{
+        flex-direction: row-reverse;
+    }
+}
+@media (min-width: 1250px) {   
+    .big_only{
+        display: inherit;
+    }
+    main {
+        grid-row: 3/4;
+        grid-column: 2/-2;
+    }
+    .adspace{
+        display: flex;
+        grid-row: 3/4;
+        grid-column: -2/-1;
+        width: 200px;
+        overflow: hidden;
+    }
+    .adspace#left{
+        grid-column: 1/2;
         flex-direction: row-reverse;
     }
 }
